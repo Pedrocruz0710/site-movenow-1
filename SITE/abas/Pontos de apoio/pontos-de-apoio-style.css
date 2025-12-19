@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: a;
+    background-image: url('/imagens/Fundo\ teste\ pontos\ .png');
+    background-repeat: no-repeat;
+}
+ 
+.s-nav{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.068);
+    height: 200px;
+}
+
+/* --- Atualize a sua nav atual --- */
+nav {
+    /* Mude de absolute para fixed para ela descer com a tela */
+    position: fixed; 
+    /* Mantenha o resto... */
+    top: 30px;
+    left: 15%;
+    width: 68%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: saturate(180%) blur(20px);
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Altura original */
+    padding: 0 20px;
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.226);
+    z-index: 1000; /* Garante que fique acima de tudo */
+    
+    /* O SEGREDO ESTÁ AQUI: Transição suave para tudo */
+    transition: all 0.4s ease-in-out;
+}
+
+/* --- Adicione esta nova classe --- */
+/* Esta é a aparência da nav quando você desce a página */
+nav.minimizada {
+    top: 10px;        /* Sobe um pouco mais para o topo */
+         /* Diminui a altura */
+    width: 60%;       /* Diminui a largura (efeito zoom out horizontal) */
+    left: 20%;        /* Ajusta o centro (já que a largura mudou) */
+    background-color: rgba(0, 0, 0, 0.75); /* Fica um pouco mais escura */
+}
+
+/* --- Ajuste para o LOGO diminuir também --- */
+#img-logo {
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+    /* Adicione a transição no logo também */
+    transition: all 0.4s ease-in-out;
+}
+
+/* Logo quando a nav estiver minimizada */
+
+
+nav>.txt-lo {
+    width: 10%;
+    text-align: center;
+} 
+
+#img-logo{
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+}
+
+#logo {
+    margin-left: 2vw;
+}
+
+/* Abas */
+nav>.abas {
+    flex: 1;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff0c;
+    border-radius: 80px;
+    /* espaço vertical para hover funcionar */
+}
+
+
+#contato-btn{
+    padding: 17px  35px;
+    background-color: #155DFC;
+    border: none;
+    border-radius: 10px;
+    margin-right: 80px;
+    transition: 0.3s ease-in-out;
+}
+
+#contato-btn > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+
+}
+
+.s-link-nav:hover {
+    color:#5a8cf8;
+    transition: 0.2s;
+    transform: translateY(-2px);
+}
+
+.s-link-nav{
+    color:  rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 10px 1px;
+    font-size: 1.45rem;
+    font-weight: 100 ;
+    cursor: pointer;
+     font-family: "Montserrat", sans-serif;
+}
+
+nav > .txt-lo > h1 > a {
+    text-decoration: none;
+    color:#155DFC;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+.s1{
+    top: 200px;
+    left: 500px;
+}
+
+.s1, h1{
+    font-weight: 100;
+    font-size: 3.4rem;
+    font-family: sans-serif;
+    color: #155DFC;
+}
+
+
+.titulo-sec{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.titulo-sec > h1{
+    text-align: center;
+}
+
+.s2, .s3{
+    height: 77.25vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bloco-s2, .bloco-s3{
+    height: 900px;
+    width: 1600px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.301);
+}
+
+.img-s2, .img-s3{
+    width: 600px;
+    height: 650px;
+    border-radius: 30px;
+     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.35);
+}
+
+.content-s2, .content-s3{
+    width: 30%;
+    height: 70%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.35);
+    padding: 30px;
+}
+
+.regiao-s2, .regiao-s3{
+    width: 100%;
+    height: 10%;
+    margin-top: 10%;
+}
+
+.regiao-s2 > h2{
+    color: #155DFC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.regiao-s3 > h2{
+    color: #155DFC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.text-s2, .text-s3{
+    width: 100%;
+    height: 50%;
+    margin-top: 20%;
+}
+
+.text-s2, .text-s3 > p{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
+#piracicaba > .img-s2{
+    background-image: url('/imagens/Piracicaba\ sp.png');
+    
+}
+
+#rj > .img-s2 {
+    background-image: url('/imagens/rio\ de\ janeiro.png');
+}
+
+#jundiai > .img-s2{
+    background-image: url('/imagens/Jundiai.png');
+}
+
+#osasco > .img-s2{
+    background-image: url('/imagens/Osasco.png');
+}
+
+#curitiba > .img-s2{
+    background-image: url('/imagens/curitiba.png');
+}
+
+#jabotao > .img-s2{
+    background-image: url('/imagens/jabotao\ dos\ gurararapes.png');
+}
+
+/* =========================================
+   ADICIONAR AO FINAL DO ARQUIVO CSS ATUAL
+   ========================================= */
+
+/* 1. Posicionamento relativo para as setas ficarem dentro das seções */
+.s2, .s3 {
+    position: relative;
+}
+
+/* 2. Esconde os blocos por padrão (Sobrescreve o display: flex original) */
+.bloco-s2, .bloco-s3 {
+    display: none;
+    /* Animação suave de entrada */
+    animation: fadeEffect 0.8s;
+}
+
+/* 3. Mostra o bloco APENAS quando tiver a classe ativo */
+/* Usamos display: flex porque seu layout original usava flexbox nesses blocos */
+.bloco-s2.ativo, .bloco-s3.ativo {
+    display: flex;
+}
+
+/* 4. Estilo das Setas de Navegação */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente exato */
+    background-color: rgba(151, 151, 151, 0.2);
+    color:#155DFC;
+    font-size: 35px;
+    padding:5px 16px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    user-select: none; /* Impede de selecionar o texto da seta */
+    z-index: 10;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    color: #0e3b9b;
+    border: 2px solid #00b5fc81;
+}
+
+.prev { left: 15%; }
+.next { right: 15%; }
+
+/* 5. Estilo das Bolinhas (Indicadores) */
+.indicadores {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 10;
+}
+
+.dot {
+    height: 5px;
+    width: 20px;
+    background-color: #bbb; /* Cor inativa */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.dot:hover, .dot.ativo {
+    background-color: #155DFC; /* Cor ativa */
+    width: 80px;
+
+}
+
+/* Animação de aparecimento */
+@keyframes fadeEffect {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}

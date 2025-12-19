@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Paleta de cores
+
+#5987EB
+#677185
+#6A83B8
+#424752
+#323B50
+
+#5773ac // btn
+
+#4072d6  // btn hover
+
+*/
+/* Adicione ou verifique se já tem isso no topo do seu CSS */
+body, html {
+    overflow-x: hidden; /* O SEGREDO: Impede rolagem lateral */
+}
+/* ------------------------------
+   FONTES
+--------------------------------*/
+
+
+
+.montserrat-nav {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+.instrument-sans-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  
+}
+/* ------------------------------
+   TOPO (imagem de fundo)
+--------------------------------*/
+.topoc {
+    background-image: url('/imagens/Design\ sem\ nome\ \(8\).png');
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+
+#bloco {
+    background-color: rgba(0, 0, 0, 0.205);
+    height: 100%;
+}
+
+/* ------------------------------
+   NAVBAR
+--------------------------------*/
+/* --- Atualize a sua nav atual --- */
+
+
+ #mobile-wrapper{
+    display: none;
+}
+nav {
+    /* Mude de absolute para fixed para ela descer com a tela */
+    position: fixed; 
+    /* Mantenha o resto... */
+    top: 30px;
+    left: 16%;
+    width: 68%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: saturate(180%) blur(20px);
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Altura original */
+    padding: 0 20px;
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.226);
+    z-index: 1000; /* Garante que fique acima de tudo */
+    
+    /* O SEGREDO ESTÁ AQUI: Transição suave para tudo */
+    transition: all 0.4s ease-in-out;
+}
+
+/* --- Adicione esta nova classe --- */
+/* Esta é a aparência da nav quando você desce a página */
+nav.minimizada {
+    top: 10px;        /* Sobe um pouco mais para o topo */
+         /* Diminui a altura */
+    width: 60%;       /* Diminui a largura (efeito zoom out horizontal) */
+    left: 20%;        /* Ajusta o centro (já que a largura mudou) */
+    background-color: rgba(0, 0, 0, 0.75); /* Fica um pouco mais escura */
+}
+
+/* --- Ajuste para o LOGO diminuir também --- */
+#img-logo {
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+    /* Adicione a transição no logo também */
+    transition: all 0.4s ease-in-out;
+}
+
+/* Logo quando a nav estiver minimizada */
+
+
+nav>.txt-lo {
+    width: 140px
+} 
+
+#img-logo{
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+}
+
+#logo {
+    margin-left: 2vw;
+}
+
+/* Abas */
+nav>.abas {
+    flex: 1;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff0c;
+    border-radius: 80px;
+    /* espaço vertical para hover funcionar */
+}
+
+
+.s-link-nav:hover {
+    color:#5a8cf8;
+    transition: 0.2s;
+    transform: translateY(-2px);
+}
+
+.s-link-nav{
+    color:  rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 10px 1px;
+    font-size: 1.45rem;
+    font-weight: 100 ;
+    cursor: pointer;
+     font-family: "Montserrat", sans-serif;
+}
+
+nav > .txt-lo > h1 > a {
+    text-decoration: none;
+    color:#155DFC;
+    font-family: "Montserrat", sans-serif;
+}
+/* ------------------------------
+   TÍTULO PRINCIPAL
+--------------------------------*/
+.titulo-principal {
+    color: #5987EB;
+    font-size: 3.2rem;
+    font-family: 'arial';
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+
+.text {
+    position: relative;
+    top: 20%; 
+    left: 12vw;
+}
+
+#contato-btn{
+    padding: 17px  35px;
+    background-color: #155DFC;
+    border: none;
+    border-radius: 10px;
+    margin-right: 80px;
+    transition: 0.3s ease-in-out;
+}
+
+#contato-btn > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+
+}
+
+#contato-btn:hover{
+    background-color: #134ecc;
+    transform:  scale(1.02);
+}
+
+/* From Uiverse.io by iZOXVL */ 
+
+/* From Uiverse.io by cssbuttons-io */ 
+
+.btn-mobile-t {
+    display: none;
+}
+#btn{
+  padding: 22px 45px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family:sans-serif;
+  color: #ffffffec;
+  background-color: #155DFC;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 5px 25px 0px 0px;
+}
+
+#btn:hover {
+  background-color: #097bfd;
+  box-shadow: 0px 15px 20px rgba(0, 9, 134, 0.603);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#btn:active {
+  transform: translateY(-1px);
+}
+
+
+#btn, .btn-s3{
+    background-color: rgba(37, 131, 255, 0.856);
+    color: #ffffff;
+    border: none;
+    margin-top: 30px;
+}
+
+/* ------------------------------
+   BOTÕES
+--------------------------------*/
+
+
+.s2 {
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.blocos2 {
+    background-color:  rgba(255, 255, 255, 0.8);
+    display: flex;
+    width: 75vw;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid rgba(107, 107, 107, 0.336);
+    box-shadow: 0px 1px 12px 0px #5987eb93;
+
+}
+
+.image {
+    width: 40%;
+    height: 60%;
+    display: flex;
+     border-radius: 20px;
+    background-image: url('/imagens/caminhao-tecnologia.webp');
+    background-size: cover;
+}
+
+.content {
+    color: white;
+    width: 40%;
+    height: 90%;
+    padding: 15px; 
+}
+
+.content>h1 {
+    background-color: rgba(0, 128, 0, 0);
+    color:#155DFC;
+    width: 75%;
+    margin-top: 60px;
+    margin-bottom: 45px;
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.content>p{
+    font-size: 1.3rem;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 2.4rem;
+    color: #000000ef;
+}
+
+.btn-s2 {
+  padding: 14px 32px;
+  margin-top: 35px;
+  background:#155DFC;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 1px 1px #0f3891;
+  border: none;
+
+}
+
+.btn-s2:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px #0a2664;
+}
+
+.btn-s2:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px#155DFC;
+}
+
+
+.s3 {
+    height: 2400px;
+    background-color: rgba(255, 255, 255, 0.979);
+}
+
+.titulos3 {
+    background-color: rgba(32, 32, 32, 0);
+    padding: 30px 0px 30px 0px;
+    height: 200px;
+}
+
+.titulos3>h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #1c325e;
+    font-weight: 400;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+
+.cont-s3{
+    margin: 30px;
+    height: 55vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-s3 > h2{
+    color: #0055ff;
+    height: 45px;
+    font-size: 2.3rem;
+    font-weight: 400;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.content-s3 > p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: "Instrument Sans", sans-serif;
+     font-size: 1.3rem;
+     line-height: 2.2rem;
+    
+}
+
+.content-s3{
+    color: rgba(0, 0, 0, 0.877);
+    width: 700px;
+    height: 600px;
+    padding: 20px;
+    background-color:#ffffff;
+    
+}
+
+.cont-s3 > img{
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.295);
+}
+
+.s4-todo{
+    height: 75vh;
+}
+
+.s4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.content-s4{
+    background-color: rgba(255, 255, 255, 0.815);
+    width: 35vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 0px 1px 12px 0px #00000049;
+    border-radius: 30px;
+}
+
+.text-s4{
+    margin-top: 30px;
+}
+
+.text-s4 > p{
+    color: rgba(0, 0, 0, 0.829);
+    text-align: justify;
+    width: 100%;
+    font-family: "Instrument Sans", sans-serif;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    padding: 30px 30px 10px 30px;
+}
+
+.h1-s4 > h1{
+     color: #1c325e;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 2.6rem;
+}
+
+.img-s4{
+    height: 700px;
+    width: 900px;
+    
+    background-image: url('/imagens/mapa\ brasil\ \(1\).png');
+}
+
+footer{
+    background-color: black;
+    height: 20vh;
+    border:4px solid white;
+}
+
+
+.mobile{
+    display: none;
+    text-align: justify;
+}

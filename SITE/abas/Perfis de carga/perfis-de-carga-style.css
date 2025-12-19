@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+ 
+.s-nav{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.068);
+    height: 200px;
+}
+
+/* Abas */
+nav {
+    /* Mude de absolute para fixed para ela descer com a tela */
+    position: fixed; 
+    /* Mantenha o resto... */
+    top: 30px;
+    left: 15%;
+    width: 67%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: saturate(180%) blur(20px);
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Altura original */
+    padding: 0 20px;
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.226);
+    z-index: 1000; /* Garante que fique acima de tudo */
+    
+    /* O SEGREDO ESTÁ AQUI: Transição suave para tudo */
+    transition: all 0.4s ease-in-out;
+}
+
+/* --- Adicione esta nova classe --- */
+/* Esta é a aparência da nav quando você desce a página */
+nav.minimizada {
+    top: 10px;        /* Sobe um pouco mais para o topo */
+         /* Diminui a altura */
+    width: 60%;       /* Diminui a largura (efeito zoom out horizontal) */
+    left: 20%;        /* Ajusta o centro (já que a largura mudou) */
+    background-color: rgba(0, 0, 0, 0.75); /* Fica um pouco mais escura */
+}
+
+/* --- Ajuste para o LOGO diminuir também --- */
+#img-logo {
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+    /* Adicione a transição no logo também */
+    transition: all 0.4s ease-in-out;
+}
+
+/* Logo quando a nav estiver minimizada */
+
+
+nav>.txt-lo {
+    width: 10%;
+    text-align: center;
+} 
+
+#img-logo{
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+}
+
+#logo {
+    margin-left: 2vw;
+}
+
+/* Abas */
+nav>.abas {
+    flex: 1;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff0c;
+    border-radius: 80px;
+    /* espaço vertical para hover funcionar */
+}
+
+
+#contato-btn{
+    padding: 17px  35px;
+    background-color: #155DFC;
+    border: none;
+    border-radius: 10px;
+    margin-right: 80px;
+    transition: 0.3s ease-in-out;
+}
+
+#contato-btn > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+
+}
+
+#contato-btn:hover{
+    background-color: #134ecc;
+    transform:  scale(1.02);
+}
+
+.s-link-nav:hover {
+    color:#5a8cf8;
+    transition: 0.2s;
+    transform: translateY(-2px);
+}
+
+.s-link-nav{
+    color:  rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 10px 1px;
+    font-size: 1.45rem;
+    font-weight: 100 ;
+    cursor: pointer;
+     font-family: "Montserrat", sans-serif;
+}
+
+nav > .txt-lo > h1 > a {
+    text-decoration: none;
+    color:#155DFC;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -32px;              /* distância da linha em relação à navbar */
+    width: 130%;                 /* tamanho da linha */
+    height: 1px;                /* linha bem fina */
+    background: rgba(0, 0, 0, 0.25);
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+
+.s1{
+    top: 200px;
+    left: 500px;
+}
+
+.s1, h1{
+    font-weight: 100;
+    font-size: 3.4rem;
+    font-family: sans-serif;
+    color: #155DFC;
+}
+
+
+.titulo-sec{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.titulo-sec > h1{
+    text-align: center;
+}
+
+.s2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 900px;
+}
+
+.img-s2{
+    height: 800px;
+    width: 1000px;
+    border-radius: 30px;
+    background-image: url('/imagens/Perfil\ de\ carga.png');
+}
+
+.content-s2{
+    height: 800px;
+    width: 800px;
+    border: 2px solid #00b5fc81;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.24);
+}
+
+
+.content-s2 > p{
+     font-size: 1.6rem;
+     line-height: 2.4rem;
+     font-family:Arial, Helvetica, sans-serif ;
+     font-weight: 100;
+     text-indent: 20px;
+}

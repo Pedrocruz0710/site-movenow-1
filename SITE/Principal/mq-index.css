@@ -1,0 +1,748 @@
+@media screen and (max-width:2400px) {
+    nav.minimizada>.abas {
+        max-width: 60%;
+    }
+
+    .s-link-nav {
+        font-size: 1.3rem;
+    }
+
+    .s2 {
+        background-color: blue;
+    }
+
+    .s3 {
+        height: 2700px;
+    }
+}
+
+@media screen and (max-width:2220px) {
+    nav>.abas {
+        max-width: 800px;
+    }
+
+    .s2 {
+        background-color: black;
+    }
+
+    .image {
+        background-position: center center;
+    }
+
+    .content-s4 {
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width:2000px) {
+    .s2 {
+        background-color: blueviolet;
+    }
+
+    .blocos2 {
+        width: 80vw;
+    }
+
+    .s-link-nav {
+        font-size: 1.2rem;
+    }
+
+    #contato-btn {
+        transform: scale(0.9);
+        margin-right: 40px;
+    }
+
+    #img-logo {
+        transform: scale(0.9);
+    }
+
+    .cont-s3>img {
+        width: 800px;
+    }
+
+    .content>h1 {
+        margin-top: 25px;
+    }
+
+}
+
+@media screen and (max-width:1800px) {
+    .s2 {
+        background-color: brown;
+
+    }
+
+    .blocos2 {
+        width: 85vw;
+    }
+
+    nav {
+        width: 80%;
+        left: 10%;
+    }
+
+    #contato-btn {
+        transform: scale(0.85);
+        margin-right: 10px;
+    }
+
+    .s-link-nav {
+        font-size: 1.1rem;
+    }
+
+    #img-logo {
+        transform: scale(0.8);
+
+    }
+
+    nav.minimizada {
+        width: 70%;
+        left: 15%;
+    }
+
+    div.abas {
+        max-width: 75%;
+    }
+
+    .cont-s3>img {
+        width: 750px;
+    }
+
+    .content-s4 {
+        height: 50vh;
+    }
+}
+
+
+@media screen and (max-width:1680px) {
+    .s2 {
+        background-color: green;
+        height: 90vh;
+    }
+
+    .blocos2 {
+        width: 90vw;
+        height: 90%;
+    }
+
+    nav {
+        width: 90%;
+        left: 5%;
+    }
+
+    .cont-s3 {
+        height: 60vh;
+    }
+
+    .cont-s3>img {
+        width: 650px;
+        height: 550px;
+    }
+
+
+    .content-s3>p {
+        font-size: 1.1rem;
+    }
+
+    nav.minimizada {
+        width: 78%;
+        left: 12.5%;
+    }
+
+    .image {
+        background-position: left center;
+        background-size: cover;
+    }
+
+    .content-s4 {
+        height: 55vh;
+        width: 50%;
+    }
+
+    .img-s4 {
+        height: 500px;
+        width: 700px;
+    }
+
+    #logo {
+        margin-left: 1px;
+    }
+
+    .content>h1 {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .img-s4 {
+        display: none;
+    }
+
+    .content-s4 {
+        height: 45vh;
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    /* ==========================================================
+       AQUI NÃO TEM CÓDIGO DE NAVBAR - O MENU FICARÁ NORMAL
+       ========================================================== */
+
+    /* --- SEÇÃO S2 (Caixa Branca e Texto) --- */
+    .s2 .image {
+        display: none;
+        /* Esconde imagem lateral */
+    }
+
+    .s2 {
+        height: auto;
+        padding: 60px 0;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .blocos2 {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .content>h1 {
+        font-size: 2.8rem;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .content>p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        text-align: justify;
+        color: #000000ef;
+    }
+
+    /* Botões dentro da S2 */
+    .btn-s3,
+    .content>button {
+        margin-top: 40px;
+        transform: scale(1.1);
+    }
+
+    /* --- SEÇÃO S3 (Frota/Estrutura) --- */
+    .s3 {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .cont-s3 {
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+        margin-bottom: 180px;
+        /* Distância entre os blocos */
+    }
+
+    /* TEXTO (Fica em Cima) */
+    .content-s3 {
+        order: 1;
+        width: 90%;
+        max-width: 800px;
+        height: auto;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .content-s3>h2 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .content-s3>p {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        text-align: justify;
+    }
+
+    /* IMAGEM (Fica em Baixo) */
+    .cont-s3>img {
+        order: 2;
+        width: 90%;
+        height: auto;
+        max-width: 800px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+
+    .content>h1 {
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+
+    .content>p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        text-align: justify;
+        color: #000000ef;
+    }
+
+    .blocos2 {
+        height: 720px;
+        padding-top: 0px;
+    }
+
+    .btn-s3 {
+        transform: scale(0.9);
+    }
+
+    #btn {
+        transform: scale(0.9);
+    }
+
+    .s3 {
+        height: auto;
+        padding-bottom: 0px;
+    }
+
+    .cont-s3 {
+        margin-bottom: 100px;
+        /* Distância entre os blocos */
+    }
+
+    .content-s3>h2 {
+        font-size: 2.2rem;
+        text-align: left;
+
+    }
+
+    .content-s3>p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .cont-s3>img {
+        width: 90%;
+        height: 400px;
+        max-width: 600px;
+        border-radius: 20px;
+    }
+
+    .s4 {
+        height: 600px;
+    }
+
+    .content-s4 {
+        width: 90vw;
+        height: 520px;
+    }
+
+    .text-s4>p {
+        padding: 10px 30px 10px 30px;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+    /* 2. Configura o Container Pai (Onde as peças flutuam) */
+    #mobile-wrapper {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        left: 5%;
+        width: 90%;
+        height: 80px;
+        z-index: 2000;
+        gap: 10px;
+        /* Espaço entre a Barra e o Botão do Menu */
+        align-items: center;
+        /* Alinha verticalmente */
+        justify-content: space-between;
+        /* Espalha as peças */
+        pointer-events: none;
+        /* Deixa clicar no site através dos espaços vazios */
+    }
+
+    /* 3. PEÇA 1: A CÁPSULA (Logo + Contato) */
+    .mobile-capsule {
+        /* Ocupa a maior parte do espaço */
+        width: 60%;
+        max-width: 370px;
+        height: 80px;
+
+        background-color: rgba(0, 0, 0, 0.55);
+        backdrop-filter: saturate(180%) blur(20px);
+        border-radius: 80px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px 0 20px;
+        /* Padding interno */
+
+        pointer-events: auto;
+        /* Habilita cliques */
+    }
+
+    .m-logo img {
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    /* Botão de Contato (Limpo) */
+    .btn-m-contato {
+        background-color: #155DFC;
+        color: white;
+        text-decoration: none;
+        padding: 17px 30px;
+        border-radius: 50px;
+        /* Redondinho */
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
+        border: none;
+        outline: none;
+        display: block;
+    }
+
+    /* 4. PEÇA 2: O BOTÃO HAMBÚRGUER (SOLTO) */
+    #btn-lateral-solto {
+        width: 80px;
+        /* Quadrado/Redondo */
+        height: 80px;
+
+        background-color: rgba(0, 0, 0, 0.55);
+        /* Mesma cor da barra */
+        backdrop-filter: saturate(180%) blur(20px);
+        border-radius: 50%;
+        /* Quadrado arredondado (estilo iOS/Moderno) */
+
+        border: none;
+        outline: none;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: auto;
+        transition: 0.3s;
+    }
+
+    /* O ícone (risquinho) */
+    .risco {
+        width: 25px;
+        height: 2px;
+        background: white;
+        position: relative;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .risco::before,
+    .risco::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 25px;
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+    }
+
+    .risco::before {
+        top: -8px;
+    }
+
+    .risco::after {
+        top: 8px;
+    }
+
+    /* Animação ao Abrir */
+    .mobile-wrapper.ativa #btn-lateral-solto {
+        background-color: #155DFC;
+        /* Muda de cor quando ativo! */
+    }
+
+    .mobile-wrapper.ativa .risco {
+        background: transparent;
+    }
+
+    .mobile-wrapper.ativa .risco::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .mobile-wrapper.ativa .risco::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+
+    /* 5. O MENU CARD (FLUTUANTE) */
+    .menu-card-float {
+        position: absolute;
+        top: 90px;
+        /* Abaixo das barras */
+        right: 0;
+        /* Alinhado com o botão hambúrguer */
+        width: 250px;
+
+        background: rgba(18, 18, 20, 0.98);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        /* Efeito pulinho */
+
+        pointer-events: auto;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+    }
+
+    .mobile-wrapper.ativa .menu-card-float {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .m-link {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .m-link:last-child {
+        border-bottom: none;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px) {
+   
+
+    .content-s3 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:720px) {
+    
+    .blocos2 {
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .content-s4 {
+        width: 95vw;
+        height: 530px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    
+
+    .m-logo img {
+        width: 80px;
+        height: 80px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    #btn-lateral-solto {
+        height: 50px;
+        width: 50px;
+    }
+
+    .mobile-capsule {
+        width: 60%;
+        min-width: 255px;
+        height: 50px;
+    }
+
+    .btn-m-contato {
+        transform: scale(0.75);
+    }
+
+    .topoc {
+        height: 380px;
+    }
+    .titulo-principal{
+        margin-bottom: 5px;
+    }
+
+    .titulo-principal>h1 {
+        font-size: 3rem;
+    }
+
+
+    .btn-di {
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .text {
+        height: 380px;
+        left: 3vw;
+        text-align: left
+    }
+
+    .text>h1 {
+        margin-bottom: 0px;
+    }
+
+    .btn-t {
+        display: none;
+    }
+
+    .btn-mobile-t {
+        display: block;
+        padding: 7px 20px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        font-family: sans-serif;
+        color: #ffffffec;
+        background-color: #155DFC;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        margin: 0px 0px 0px 0px;
+    }
+
+     .btn-mobile-t:hover {
+     background-color: #097bfd;
+    box-shadow: 0px 15px 20px rgba(0, 9, 134, 0.603);
+    color: #fff;
+     transform: translateY(-7px);
+    }
+
+    #bloco {
+    background-color: rgba(0, 0, 0, 0.527);
+    height: 100%;
+}
+    .content > h1 {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .s2{
+        height: 500px;
+    }
+
+    .blocos2{
+        height: 400px;
+        padding-top: 10px;
+    }
+    .content> h1{
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+    }
+    .mobile{
+        display: inline;
+    }
+
+    .content> .mobile {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        text-align: justify;
+        color: #000000ef;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .content > #btn{
+        transform: scale(0.6);
+    }
+
+    .titulos3 {
+        height: 100px;
+    }
+    .titulos3 > h1{
+        font-size: 1.5rem;
+    }
+    
+    .content-s3{
+        margin-bottom: 40px;
+    }
+    .content-s3 > h2{
+        font-size: 1.4rem;
+        margin-bottom: 0px;
+    }
+
+    .content-s3 > p{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+
+    #btn{
+        transform: scale(0.6);
+    }
+    .cont-s3 > img{
+        height: 200px;
+    }
+
+    .h1-s4 > h1{
+        font-size: 1.5rem;
+    }
+
+    .img-mobile{
+        position: absolute;
+        height: 100px;  
+        width: 100px;
+        background-color: black;
+      }
+
+      .text-s4 > p{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+      }
+}
