@@ -158,6 +158,7 @@ nav>.abas {
     padding: 10px 1px;
     font-size: 1.45rem;
     font-weight: 100 ;
+    
     cursor: pointer;
      font-family: "Montserrat", sans-serif;
 }
@@ -325,7 +326,6 @@ nav > .txt-lo > h1 > a {
   transition: 0.3s ease;
   box-shadow: 0 1px 1px #0f3891;
   border: none;
-
 }
 
 .btn-s2:hover {
